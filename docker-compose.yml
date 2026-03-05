@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  yibo-ai:
+    build:
+      context: ./yibo-ai
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    container_name: yibo-ai-portfolio
