@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# YIBO.AI - Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+个人作品集网站，展示设计作品、项目经验和专业技能。
 
-Currently, two official plugins are available:
+## 🌟 项目特色
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **响应式设计** - 支持桌面端和移动端
+- **图片展示** - 作品集图片滑动浏览
+- **交互体验** - 点击图片放大查看详情
+- **现代化UI** - 使用Tailwind CSS和React构建
 
-## Expanding the ESLint configuration
+## 🚀 快速开始
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 在线访问
+访问地址：https://KKsivan1.github.io/Personal-Website
 
-- Configure the top-level `parserOptions` property like this:
+### 本地开发
+```bash
+# 安装依赖
+npm install
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📁 项目结构
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+├── index.html          # 主页面
+├── images/             # 作品集图片
+├── src/               # React源代码
+│   ├── components/    # 组件文件
+│   ├── App.tsx        # 主应用组件
+│   └── main.tsx       # 入口文件
+└── public/            # 静态资源
+```
+
+## 🛠️ 技术栈
+
+- **前端框架**: React + TypeScript
+- **构建工具**: Vite
+- **样式框架**: Tailwind CSS
+- **部署平台**: GitHub Pages
+
+## 📸 作品集展示
+
+包含以下设计作品：
+- 文化遗产保护项目
+- 口腔医疗产品设计  
+- 室内设计案例
+
+## 📞 联系方式
+
+- 邮箱：yibo@example.com
+- 电话：+86 123-4567-8900
+
+## 📄 许可证
+
+MIT License
